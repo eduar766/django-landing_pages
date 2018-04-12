@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('easyway/', include('easyway.urls')),
     path('liliana/', include('liliana.urls')),
+    path('bailante/', include('bailante.urls')),
 ]

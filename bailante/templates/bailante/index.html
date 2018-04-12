@@ -1,0 +1,382 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bailante</title>
+	<!-- META TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="author" content="Easyway+ | Eduardo Saavedra">
+	<meta name="description" content="">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="{% static 'bailante/assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'bailante/assets/css/ionicons.min.css' %}">
+	<link rel="stylesheet" href="{% static 'bailante/assets/css/flexslider.css' %}">
+	<link rel="stylesheet" href="{% static 'bailante/assets/css/animsition.min.css' %}">
+	<link rel="stylesheet" href="{% static 'bailante/assets/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'bailante/assets/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'bailante/assets/css/my_styles.css' %}">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body class="animsition">
+
+	<!-- HEADER  -->
+	<header class="main-header" id="portada">
+		<div class="container">
+			<div class="logo">
+				<a href="/"><img src="{% static 'bailante/assets/img/logo.png' %}" alt="logo"></a>
+			</div>
+
+			<div class="menu">
+
+				<nav class="desktop-nav">
+					<ul class="first-level">
+						<li><a href="#portada">Inicio</a></li>
+						<li><a href="#nosotros">Nosotros</a></li>
+						<li><a href="#clases">Clases</a></li>
+						<li><a href="#contacto">Contáctenos</a></li>
+            <li><a href="#registro">Registrarse</a></li>
+					</ul>
+				</nav>
+
+				<nav class="mobile-nav"></nav>
+				<div class="menu-icon">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="carousel" class="carousel slide carousel-fade site-hero" data-ride="carousel">
+	    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+	    </ol>
+	    <!-- Carousel items -->
+	    <div class="carousel-inner slides">
+	        <div class="active item">
+	        	<div class="item-content">
+              <p class="portada-text">Para aprender a bailar no necesitas salir de tu casa</p>
+    					<h2 class="portada-title">Nosotros vamos donde quieras</h2>
+  	        </div>
+          </div>
+
+	        <div class="item">
+            <div class="item-content">
+              <p class="portada-text">Para aprender a bailar no necesitas salir de tu casa</p>
+              <h2 class="portada-title">Nosotros vamos donde quieras</h2>
+            </div>
+	        </div>
+
+          <div class="item">
+            <div class="item-content">
+              <p class="portada-text">Para aprender a bailar no necesitas salir de tu casa</p>
+              <h2 class="portada-title">Nosotros vamos donde quieras</h2>
+            </div>
+          </div>
+      </div>
+	</div>
+
+	</div>
+
+	<!-- WHAT WE DO -->
+
+	<section id="clases">
+    <div class="row">
+      <div class="col-md-2 col-xs-4 clases-cont">
+          <img src="{% static 'bailante/assets/img/hip-hop.jpg' %}" class="image">
+        </div>
+        <div class="col-md-2 col-xs-4 clases-cont">
+          <img src="{% static 'bailante/assets/img/bachata.jpg' %}" class="image">
+        </div>
+        <div class="col-md-2 col-xs-4 clases-cont">
+          <img src="{% static 'bailante/assets/img/ballet.jpg' %}" class="image">
+        </div>
+        <div class="col-md-2 col-xs-4 clases-cont">
+          <img src="{% static 'bailante/assets/img/salsa.jpg' %}" class="image">
+        </div>
+        <div class="col-md-2 col-xs-4 clases-cont">
+          <img src="{% static 'bailante/assets/img/tango.jpg' %}" class="image">
+        </div>
+        <div class="col-md-2 col-xs-4 clases-cont">
+          <img src="{% static 'bailante/assets/img/kizomba.jpg' %}" class="image">
+      </div>
+    </div>
+	</section>
+
+  <section id="instructores">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <p class="text-instructores">Tú dispones del horario y nosotros <br /> vamos hasta tu casa</p>
+          <span id="largo"></span>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="title-instructores">Tenemos los mejores bailarines a tu disposición</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 col-xs-4 siluetas">
+          <img src="{% static 'bailante/assets/img/silueta-salsa.png' %}">
+          <p>Instructor de Salsa</p>
+          <button class="boton-instructores" type="button"> Leer Más </button>
+        </div>
+        <div class="col-md-2 col-xs-4 siluetas">
+          <img id="balletcito" src="{% static 'bailante/assets/img/silueta-ballet.png' %}">
+          <p>Instructor de Ballet</p>
+          <button class="boton-instructores" type="button"> Leer Más </button>
+        </div>
+        <div class="col-md-2 col-xs-4 siluetas">
+          <img src="{% static 'bailante/assets/img/silueta-tango.png' %}">
+          <p>Instructor de Tango</p>
+          <button class="boton-instructores" type="button"> Leer Más </button>
+        </div>
+        <div class="col-md-2 col-xs-4 siluetas">
+          <img src="{% static 'bailante/assets/img/silueta-Hip-hop.png' %}">
+          <p>Instructor de Hip Hop</p>
+          <button class="boton-instructores" type="button"> Leer Más </button>
+        </div>
+        <div class="col-md-2 col-xs-4 siluetas">
+          <img src="{% static 'bailante/assets/img/silueta-kizomba.png' %}">
+          <p>Instructor de Kizomba</p>
+          <button class="boton-instructores" type="button"> Leer Más </button>
+        </div>
+        <div class="col-md-2 col-xs-4 siluetas">
+          <img src="{% static 'bailante/assets/img/silueta-bachata.png' %}">
+          <p>Instructor de Bachata</p>
+          <button class="boton-instructores" type="button"> Leer Más </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="nosotros">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="title-nosotros">¡Con nosotros aprenderás!</h1>
+          <p id="text-nosotros">Si quieres aprender los mejores pasos de moda, encontrar tu ritmo y emplear las técnicas más sofisticadas, <br /> ingresa a nuestra academia, te daremos todas las herramientas necesarias para que seas el mejor.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-2 clases-cont2">
+            <img src="{% static 'bailante/assets/img/tecnica-en-los-pasos.jpg' %}" class="image2">
+
+          </div>
+
+          <div class="col-md-2 clases-cont2">
+            <img src="{% static 'bailante/assets/img/definición-de-estilo.jpg' %}" class="image2">
+
+          </div>
+
+          <div class="col-md-2 clases-cont2">
+            <img src="{% static 'bailante/assets/img/interpretacion.jpg' %}" class="image2">
+
+          </div>
+
+          <div class="col-md-2 clases-cont2">
+            <img src="{% static 'bailante/assets/img/variedad-de-giros.jpg' %}" class="image2">
+
+          </div>
+
+          <div class="col-md-2 clases-cont2">
+            <img src="{% static 'bailante/assets/img/ritmica-musica.jpg' %}" class="image2">
+
+          </div>
+
+          <div class="col-md-2 clases-cont2">
+            <img src="{% static 'bailante/assets/img/musicalidad.jpg' %}" class="image2">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="paquetes">
+    <div class="container">
+      <div class="row">
+        <h1 id="title-paquetes">Paquetes</h1>
+      </div>
+
+      <div class="row promo-paquetes">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 fondo-paquete">
+          <div class="col-md-12 paquetesX">
+            <p class="descripcion-paquete3">Clase Única </br> <span class="precio">$75.000</span></p>
+            <button class="boton-paquete" type="button">Contactar</button>
+          </div>
+          <div class="col-md-12 paquetesXX">
+            <p class="descripcion-paquete3">Clase Única en pareja</p>
+            <p class="descripcion-paquete2">120 minutos</p>
+            <p class="descripcion-paquete3"><span class="precio">$97.000</span></p>
+            <button class="boton-paquete" type="button">Contactar</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 fondo-paquete">
+          <div class="col-md-12 paquetes1">
+            <p class="descripcion-paquete3">Mensualidad </br> <span class="precio2">12 clases x $780.000</span> </br></br> <span class="precio">Ahorra $120.000</span></p>
+
+            <button class="boton-paquete" type="button">Contactar</button>
+          </div>
+          <div class="col-md-12 paquetes2">
+            <p class="descripcion-paquete3">Clase Mensual en Pareja </br> <span class="precio2">12 clases x $990.000</span> </br></br> <span class="precio">Ahorra $174.000</span></p>
+            <button class="boton-paquete" type="button">Contactar</button>
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <div class="container">
+      <div class="row">
+        <h1 id="title-testimonio">Testimonios de nuestros clientes</h1>
+      </div>
+      <div class="col-md-12 iframecito">
+        <iframe scrolling="no" src="{% url 'carousel' %}"></iframe> </div>
+      <div class="col-md-4.offset-md-4">
+          <img src="{% static 'bailante/assets/img/bailarina-testimonios.png' %}" class="bailarina-testimonio">
+      </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="_formulario">
+                <p>
+                  ¿Te animas a tomar clases <br /> sin salir de casa?
+                </p>
+
+                <form class="formulario" method="POST" action="{% url 'send' %}">
+									{% csrf_token %}
+									<div class="form_div">
+										{{ form.name }}
+                  </div>
+                  <div class="form_div">
+										{{ form.telefono }}
+                  </div>
+                  <div class="form_div">
+										{{ form.email }}
+                  </div>
+
+                  <button type="submit" class="btn" style="margin-top:20px"><span>Enviar</span></button>
+
+                  <input type="hidden" name="_next" value="http://easywayplus.com/info/gracias.html">
+                  <input type="hidden" name="_subject" value="Nuevo contacto desde el sitio web de Bailante">
+                  <input type="text" name="_gotcha" style="display:none">
+
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8">
+          <p class="contact-title">¡Vamos a donde tu quieras que vayamos!</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+	<!-- FOOTER -->
+	<footer class="">
+		<div class="container">
+			<div class="col-md-8 col-12">
+			</div>
+
+			<div class="col-md-4 col-12">
+				<div class="row">
+          <a class="logo-redes" href="#"><img src="{% static 'bailante/assets/img/logo_fb.png' %}"></a>
+          <a class="logo-redes" href="#"><img src="{% static 'bailante/assets/img/logo_ig.png' %}"></a>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="{% static 'bailante/assets/js/jquery-2.1.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bailante/assets/js/isotope.pkgd.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bailante/assets/js/jquery.flexslider.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bailante/assets/js/smoothScroll.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bailante/assets/js/jquery.animsition.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bailante/assets/js/wow.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bailante/assets/js/main.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bailante/assets/js/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'bailante/assets/js/my_script.js' %}"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		$(window).load(function() {
+
+			$('.carousel').carousel();
+
+			new WOW().init();
+
+			// initialise flexslider
+			$('.site-hero').flexslider({
+				animation: "fade",
+				directionNav: false,
+				controlNav: false,
+				keyboardNav: true,
+				slideToStart: 0,
+				animationLoop: true,
+				pauseOnHover: false,
+				slideshowSpeed: 8000,
+			});
+
+
+			// initialize isotope
+			var $container = $('.portfolio_container');
+			$container.isotope({
+				filter: '*',
+			});
+
+			$('.portfolio_filter a').click(function(){
+				$('.portfolio_filter .active').removeClass('active');
+				$(this).addClass('active');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+					filter: selector,
+					animationOptions: {
+						duration: 500,
+						animationEngine : "jquery"
+					}
+				});
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>

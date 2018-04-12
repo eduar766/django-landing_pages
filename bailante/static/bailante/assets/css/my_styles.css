@@ -1,0 +1,421 @@
+/* Portada */
+.portada-title {
+	color: #e84ef5 !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0 auto;
+    font-size: 4.5em !important;
+    width: 100% !important;
+}
+
+.portada-text {
+	color: #e84ef5 !important;
+	font-weight: bold;
+	margin-top: 4em !important;
+}
+
+.animsition-link {
+	color: #000 !important;
+}
+
+nav.desktop-nav ul.first-level li a {
+    color: #000 !important;
+    font-size: 1.3em;
+}
+
+nav.desktop-nav ul.first-level li a:hover {
+    color: #0083ba !important;
+}
+
+nav.desktop-nav ul.first-level > li > a:after {
+    background-color: transparent;
+}
+
+.logo a img {
+	width: 15em;
+}
+
+/* SECCION CLASES */
+section#clases {
+    margin: 0 auto !important;
+}
+
+
+/* *** hover clases *** */
+.clases-cont {
+    padding: 0px !important;
+    background-color: #000;
+}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+  background-color: #000;
+}
+
+.clases-cont:hover .image {
+  opacity: 0.3;
+}
+
+.clases-cont:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 5px;
+  border: 1px solid #fff;
+}
+
+/* INSTRUCTORES */
+#instructores {
+	background-image: url('../img/fondo-instructores.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-position: 17%;
+}
+
+.text-instructores {
+	color: #fff;
+  text-align: center;
+  margin-top: 7em;
+  font-size: 2em;
+}
+
+#largo {
+	background-color: #e84ef5;
+    width: 25%;
+    color: transparent;
+    display: block;
+    margin: 0 auto;
+    height: 10px;
+}
+
+.title-instructores {
+	text-align: center;
+	color: #e84ef5;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.siluetas img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.siluetas p {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+}
+
+.col-md-2.siluetas img {
+    width: 7em;
+    height: 8em;
+    margin-top: 2em;
+}
+
+
+.boton-instructores {
+	background-color: transparent;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid;
+    padding: 0.48em;
+    color: #fff;
+    margin-bottom: 5em;
+}
+
+/* NOSOTROS */
+#nosotros {
+	background-image: url('../img/fondo-nosotros.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#title-nosotros {
+	color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5em;
+}
+
+#text-nosotros {
+	color: #fff;
+	text-align: center;
+}
+
+/* *** hover nosotros *** */
+.clases-cont2 {
+	margin-bottom: 5em;
+}
+
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+  background-color: #000;
+}
+
+.clases-cont2:hover .image2 {
+  opacity: 0.3;
+}
+
+.clases-cont2:hover .middle2 {
+  opacity: 1;
+}
+
+.text2 {
+  color: white;
+  font-size: 10px;
+  padding: 10px 5px;
+  background-color: #e84ef5;
+  text-align: center;
+}
+
+/* PAQUETES */
+#paquetes {
+	background-image: url('../img/fondo-paquetes.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+  
+}
+
+#title-paquetes {
+	color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5em;
+    margin-top: 2em;
+    text-transform: uppercase;
+
+}
+
+.fondo-paquete {
+	background-image: url('../img/fondo-para-precios.jpg');
+	border-right: 1px solid;
+  padding:0 ;
+}
+
+.descripcion-paquete {
+	color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.descripcion-paquete2 {
+	color: #fff;
+    text-align: center;
+}
+
+.descripcion-paquete3 {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.boton-paquete {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #0083ba;
+    padding: 3px;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+.descripcion-paquete4 {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.descripcion-paquete5 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.promo-paquetes {
+	margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+span.precio {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+span.precio2 {
+    font-size: 1.2em;
+    letter-spacing: 0.19em;
+}
+
+.col-md-12.paquetes1 {
+    border-bottom: 1px solid;
+    margin-top: 3em;
+}
+.col-md-12.paquetes2 {
+    margin-top: 2em;
+}
+.col-md-12.paquetesX {
+    border-bottom: 1px solid;
+    margin-top: 7.28em;
+}
+
+.col-md-12.paquetesXX {
+    margin-top: 3.2em;
+}
+
+/* TESTIMONIO */
+
+#testimonios {
+	background-color: #009DD8;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#title-testimonio {
+	text-align: center;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+iframe {
+  width: 100%;
+  border: 0;
+	margin-bottom: 2em;
+  height: 16em;
+}
+
+img.bailarina-testimonio {
+    width: 35%;
+    position: absolute;
+    z-index: 1;
+    right: 3em;
+    margin-top: -2em;
+}
+
+.iframecito {
+  z-index: 10;
+}
+
+/* CONTACTO */
+#contacto {
+	background-image: url(../img/fondo-contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;;
+}
+
+._formulario {
+    background-color: #0083ba;
+    padding: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+._formulario p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.form_div input {
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 1em;
+}
+
+button.btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.3em;
+  display: block;
+  margin-top: 12em;
+  text-align: center;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #fa9fe1;
+    height: 5em;
+}
+
+.logo-redes img {
+    width: 5%;
+    float: right;
+    margin-top: 1.5em;
+}
+
+
+.item-content {
+    margin-top: 10em;
+}
+
+
+/* BODY GENERAL */
+
+.clases-cont img {
+    height: 24em;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px){
+  .contact-title{
+    margin-top: 2em;
+  }
+}

@@ -1,0 +1,189 @@
+{% load static %}
+
+<!DOCTYPE>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="{% static 'liliana/assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'liliana/assets/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'liliana/assets/css/infinite-slider.css' %}">
+	<link rel="stylesheet" href="{% static 'liliana/assets/css/responsive.css' %}">
+	<script type="text/javascript" src="{% static 'liliana/assets/js/jquery-3.2.1.min.js' %}" ></script>
+	<script type="text/javascript" src="{% static 'liliana/assets/js/jquery.animateNumber.js' %}" ></script>
+	<script type="text/javascript" src="{% static 'liliana/assets/js/script.js' %}" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+	<title>Liliana Zarate</title>
+<body>
+
+	<section id="portada">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-12 col-12">
+					<img id="logo" src="{% static 'liliana/assets/image/logo-liliana.png' %}">
+				</div>
+				<div class="col-md-9 col-sm-12 col-12">
+					<h2 id="titulo-portada">Nuestros agentes te escuchan <br/> para brindarte las mejores opciones</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-12">
+					<a id="cta1" href="#contacto" class="btn btn-default" role="button">Quiero adquirir una propiedad</a>
+				</div>
+				<div class="col-md-6 col-sm-6 col-12">
+					<a id="cta2" href="#contacto" class="btn btn-default" role="button">Quiero adquirir o vender mi propiedad</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="video">
+		<div class="container">
+			<div class="row">
+				<a id="dummy" href="#"></a>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="skills">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-6">
+					<div id="circle"><span class="count2">Más de $</span><span class="count">30</span><span class="count2">.000.000 COP</span></div>
+					<p class="skill-text">Vendidos en propiedades</p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-6">
+					<div id="circle">Más de <span class="count">150</span> clientes felices</div>
+					<p class="skill-text">entre compradores,  vendedores y arrendatarios</p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-12">
+					<div id="circle">Más de <span class="count">30</span> Años</div>
+					<p class="skill-text">sirviendo con las ventas</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="contacto">
+		<div class="container">
+			<div class="row">
+				<div id="contacto-shadow" class="col-md-6 col-sm-7 col-12">
+					<h5 class="contacto-text">Ingresa tus datos y <br/> nosotros te contactamos</h5>
+					<form class="formulario" method="POST" action="{% url 'send' %}">
+						{% csrf_token %}
+              <div class="form_div">
+              	<p>Nombre y Apellido</p>
+								{{ form.name }}
+              </div>
+              <div class="form_div">
+              	<p>Correo electrónico</p>
+								{{ form.email }}
+              </div>
+              <div class="form_div">
+              	<p>Teléfono</p>
+								{{ form.telefono }}
+              </div>
+              <button type="submit" class="btn" style="margin-top:20px"><span>Enviar</span></button>
+            </form>
+				</div>
+				<div class="col-md-6 col-sm-5 col-12">
+					<h2 id="contacto-text2" class="contacto-text">¡No gastes tiempo buscando <br/> en portales web!</h2>
+				</div>
+			</div>
+			<div id="contacto-promo" class="row">
+				<div class="col-md-6">
+					<h3 id="promo">Más de 500 propiedades<br/> a TÚ disposición</h3>
+					<h2 class="contacto-text">¡Financiamos tu inmueble!</h2>
+				</div>
+				<div class="col-md-6">
+					<img id="imagen-cortada" src="{% static 'liliana/assets/image/financiamos-tu-inmueble.png' %}">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="propiedades">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<div class="hovereffect">
+				        <img class="img-responsive propiedad-imagen" src="{% static 'liliana/assets/image/propiedad-chico.jpg' %}">
+				        <div class="overlay">
+				           <h2>Chico Navaro</h2>
+				           <!--<a class="info" href="#"></a>-->
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="hovereffect">
+				        <img class="img-responsive propiedad-imagen" src="{% static 'liliana/assets/image/propiedad-rosales.jpg' %}">
+				        <div class="overlay">
+				           <h2>Rosales</h2>
+				           <!--<a class="info" href="#"></a>-->
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="hovereffect">
+				        <img class="img-responsive propiedad-imagen" src="{% static 'liliana/assets/image/propiedad-cedritos1.jpg' %}">
+				        <div class="overlay">
+				           <h2>Cedritos</h2>
+				           <!--<a class="info" href="#"></a>-->
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="clientes">
+		<div class="container">
+			<h4 class="contacto-text"> Nuestros Clientes </h4>
+		   <section class="customer-logos slider">
+		      <div class="slide"><img src="{% static 'liliana/assets/image/logo-2.jpg' %}"></div>
+		      <div class="slide"><img src="{% static 'liliana/assets/image/logo-3.jpg' %}"></div>
+		      <div class="slide"><img src="{% static 'liliana/assets/image/logo-4.jpg' %}"></div>
+		      <div class="slide"><img src="{% static 'liliana/assets/image/logo-5.jpg' %}"></div>
+		      <div class="slide"><img src="{% static 'liliana/assets/image/logo-6.jpg' %}"></div>
+		      <div class="slide"><img src="{% static 'liliana/assets/image/logo-7.jpg' %}"></div>
+		   </section>
+		</div>
+	</section>
+
+
+
+	<section id="ubicanos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6 col-sm-8 col-8">
+					<h4 class="contacto-text">Ubicanos</h4>
+					<p>CRA 15 N 88-64 OF 515 TORRE ZIMMA, 11001 Bogota / <a href="tel:+31522272993">+31 522 272 993</a></p>
+				</div>
+				<div class="facebook col-md-3 col-sm-4 col-4">
+					<img id="fb" src="{% static 'liliana/assets/image/fb.png' %}">
+					<p id="text-fb">Inmobiliaria Liliana Zarate</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="mapa">
+		<div class="row">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.548875541163!2d-74.05528948605453!3d4.674206396604776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a8d2c885693%3A0xa4672f4b127210db!2sEdificio+Zimma!5e0!3m2!1ses-419!2sve!4v1509549568975" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	<footer>
+		<p class="text-footer">&copy; 2017 Liliana Zarate Inmobiliaria. Todos los derechos reservados <br/>Diseño y Desarrollo por <a href="http://easywayplus.com">EasyWay+</a></p>
+	</footer>
+
+</body>
+</html>

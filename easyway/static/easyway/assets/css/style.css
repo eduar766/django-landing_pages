@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald');
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+/* Sección Portada */
+#portada {
+  background-image: url("../img/fondo-portada.png");
+  background-size: cover;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+}
+
+span#portada_title {
+    font-size: 1.98rem;
+    font-weight: bold;
+}
+
+#portada_subtitle {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.portada_encabezado {
+  margin-top: 2.5rem;
+}
+
+/* Sección Formulario */
+.cohete {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.formulario {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+._formulario {
+  padding: 0.7rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+#llena {
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+#ochenta h3 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#ochenta {
+    padding-left: 0;
+}
+
+#descuento {
+    padding-left: 0;
+}
+
+#descuento h3 {
+    margin-top: 1rem;
+}
+
+/* Seccion Servicios */
+#servicios {
+  background-image: url("../img/fondo-servicios.png");
+  background-size: cover;
+  margin-top: 1.5rem;
+}
+
+.servicio {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Seccion web */
+#servicio-web {
+    margin-top: 2rem;
+}
+
+#titulo-web {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#parrafo-web{
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cuadritos {
+  margin-top: 2rem;
+}
+
+.control {
+    left: 10%;
+}
+.control h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.control h4 {
+    font-size: 1.1rem;
+}
+
+.control p {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.col-md-6.controlcito {
+  right: 10%;
+}
+/* Seccion marketing */
+#servicios-marketing {
+  background-image: url("../img/fondo-marketing.png");
+  background-size: contain;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#ipad {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Seccion Nosotros */
+#nosotros {
+  background-image: url("../img/fondo-nosotros.png");
+  background-size: cover;
+}
+
+._nosotros {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Titulos */
+.titulos {
+  font-size: 1.71rem;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#04AD60));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titulos span {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  line-height: 2.5rem;
+}
+
+.span2 {
+  letter-spacing: 0.01rem !important;
+}
+
+/* Sección Skills */
+#skills {
+  /*background-image: url("../img/fondo-skills.png");
+  background-size: cover;*/
+  background: linear-gradient(91deg, #464997, #1f2524);
+  background-size: 400% 400%;
+  -webkit-animation: background-skills 15s ease infinite;
+  -moz-animation: background-skills 15s ease infinite;
+  -o-animation: background-skills 15s ease infinite;
+  animation: background-skills 15s ease infinite;
+}
+
+@-webkit-keyframes background-skills {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes background-skills {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes background-skills {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes background-skills {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
+.barras-skills {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.porcentaje {
+  color: #fff;
+  margin-top: 0.8rem;
+}
+
+
+/* HTML */
+html {
+  background: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-webkit-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-ms-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-moz-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+
+#animate-area	{
+	/*width: 3294px;
+	height: 700px;*/
+	background-image: url(http://i68.tinypic.com/2413rrs.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+animation: animatedBackground 80s linear infinite;
+-ms-animation: animatedBackground 80s linear infinite;
+-moz-animation: animatedBackground 80s linear infinite;
+-webkit-animation: animatedBackground 80s linear infinite;
+}
+
+@keyframes animatedBackground2 {
+			0%   { background-position: 0px; }
+  100% { background-position: 0px 1222px; } /* set this to the height of the image */
+		}
+		@-webkit-keyframes animatedBackground2 {
+			0%   { background-position: 0px; }
+  100% { background-position: 0px 1222px; } /* set this to the height of the image */
+		}
+		@-ms-keyframes animatedBackground2 {
+			0%   { background-position: 0px; }
+  100% { background-position: 0px 1222px; } /* set this to the height of the image */
+		}
+		@-moz-keyframes animatedBackground2 {
+			0%   { background-position: 0px; }
+  100% { background-position: 0px 1222px; } /* set this to the height of the image */
+		}
+html{width:100%;}
+#animate-area2	{
+	/*width: 1035px;
+	height: 1222px;*/
+  /*position:absolute;*/
+	background-image: url('../img/cruces.png');
+  top:0;
+  left:50%;
+  /*transform: translateX(-50%);*/
+	background-position: 0 0;
+	background-repeat: repeat-y;
+  animation: animatedBackground2 30s infinite linear;
+  -ms-animation: animatedBackground2 30s infinite linear;
+  -moz-animation: animatedBackground2 30s infinite linear;
+  -webkit-animation: animatedBackground2 30s infinite linear;
+}
+
+
+.landing-footer {
+  background-image: url("../img/fondo-skills.png");
+  background-size: cover;
+  color: #fff;
+}
+
+.footercito h5 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.titulito {
+  margin-top: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Gracias */
+.row.text-center div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9%;
+}
+
+.form_div {
+  margin-top: 0.3rem;
+}
+
+/* ********** PAGINA CONTENIDOS ********** */
+#portada-contenido{
+  background-image: url("../img/portada-contenidos.jpg");
+  background-size: cover;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+  height: 35rem;
+}
+
+.cuadrito-flotante {
+  background-image: url("../img/cintillo-portada.jpg");
+  color: #fff;
+  margin: 0 auto;
+  padding: 6px 10px 6px 10px;
+  margin-top: -2%;
+  z-index: 9999;
+}
+
+#title-contenido1{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #3F42A5;
+}
+
+#background-contenido1{
+  background-image: url("../img/fondo-paquete-1.jpg");
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+#contenido1 {
+  background-image: url("../img/rectangulo-paquetes.png");
+  height: 30rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  color: #fff;
+  text-align: center;
+  opacity: 0.9;
+}
+
+#title-contenido {
+  margin-top: 1rem;
+}
+
+#title-contenido-descripcion, 
+#title-contenido-precio {
+  margin-top: 5rem;
+}
+
+a.title-contenido-boton {
+  border: 2px solid #fff;
+  color: #fff;
+  margin-top: 2rem !important;
+  display: inline-block;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a.title-contenido-boton:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #3F42A5;
+}
+
+#background-contenido2{
+  background-image: url("../img/fondo-paquete-2.jpg");
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+#background-contenido3{
+  background-image: url("../img/fondo-paquete-3.jpg");
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.modal-form-contenido {
+  text-align: center;
+  
+}
+
+.modal-form {
+
+}
+
+.modal-input input {
+  width: 80%;
+  margin-top: 1.3rem;
+  border: 1px solid #3F42A5;
+}
+
+a.title-contenido-boton:hover {
+    color: #3F42A5 !important;
+}

@@ -1,0 +1,296 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EasyWay+ | Eduardo Saavedra">
+    <meta name="description" content="EasyWay+ Creamos increibles campañas digitales con soporte constante y desarrollo web para todos nuestros clientes.">
+
+    <!-- STYLES -->
+    <link rel="shortcut icon" href="{% static 'easyway/assets/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'easyway/assets/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'easyway/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'easyway/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'easyway/assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'easyway/assets/css/responsive.css' %}">
+    <title>Easyway Plus</title>
+  </head>
+  <body>
+
+
+    <section id="portada">
+      <div class="container lato">
+        <div class="row">
+          <div class="logo col-md-4 col-sm-2">
+            <img src="{% static 'easyway/assets/img/logo.png' %}" alt="">
+          </div>
+
+          <div class="col-md-8 col-sm-10 align-right portada_encabezado">
+            <h3 style="color: #fff;">"¿Sabías que el 50% de la pobación<br/><span id="portada_title">mundial tiene acceso a internet?"</span></h3>
+            <h6 style="color: #fff; font-size:0.8rem;"> Internet World Stats </h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="text-center">
+            <h2 id="portada_subtitle">este es un excelente mercado para posicionar tu negocio</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="formulario">
+        <div id="" class="container lato">
+          <div class="row align-middle">
+            <div class="col-md-3 pulse">
+              <img class="cohete" src="{% static 'easyway/assets/img/cohete.png' %}" alt="">
+            </div>
+            <div class="col-md-6" style="margin-top: 6rem;">
+              <div class="row">
+                <h3 class="letra_responsive" id="llena">llena el formulario y obtén</h3>
+              </div>
+              <div class="row">
+                <div id="ochenta" class="col-md-4">
+                  <h3>66%</h3>
+                  <p id="harold">O desde 2.000$ al año!</p>
+
+                </div>
+                <div id="descuento" class="col-md-8">
+                  <h3>
+                    de descuento en<br/><span>nuestras campañas digitales</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="row">
+                <h3 class="letra_responsive">contáctanos al <a href="tel:+573204943638">+57 320 4943638</a></h3>
+
+              </div>
+
+
+            </div>
+            <div class="col-md-3">
+              <div class="_formulario" style="background-color:#3F42A5">
+                <p style="color:#fff; text-align:center; font-weight:bold;">
+                  Completa nuestro formulario y nosotros te contactaremos
+                </p>
+
+                <form class="formulario" method="POST" action="{% url 'comentar' %}">
+                  {% csrf_token %}
+                  <div class="form_div">
+                    {{ form.name }}
+                  </div>
+
+                  <div class="form_div">
+                    {{ form.email }}
+                  </div>
+
+                  <div class="form_div">
+                    {{ form.empresa }}
+                  </div>
+                  <div class="form_div">
+                    {{ form.telefono }}
+                  </div>
+                  <div class="form_div">
+                    {{ form.hora }}
+                  </div>
+                  <button type="submit" class="btn" style="margin-top:20px"><span>Enviar</span></button>
+
+                  <input type="hidden" name="_next" value="http://easywayplus.com/info/gracias.html">
+                  <input type="hidden" name="_subject" value="Nuevo contacto desde el sitio web de Easyway">
+                  <input type="text" name="_gotcha" style="display:none">
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section id="herramientas">
+          <div class="container lato">
+            <div class="row">
+
+                <div class="col-md-2">
+                </div>
+
+                <div class="col-md-8">
+                  <h3 class="titulos oswald"> Herramientas en las que <br /><span>nos especializamos</span> </h3>
+                  <p id="parrafo-web" class="align-center letra_responsive">Luego de más de dos años de experiencia en marketing
+                  y publicidad digital te ofrecemos las mejores herramientas</p>
+                </div>
+
+                <div class="col-md-2">
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 herr">
+                <span style="display: flex;flex-wrap: wrap;">
+                  <img class="" src="{% static 'easyway/assets/img/fb.png' %}" alt="">
+                  <img class="" src="{% static 'easyway/assets/img/ig.png' %}" alt=""><br>
+                </span>
+                <p >Facebook e Instagram para empresas</p>
+              </div>
+
+              <div class="col-md-3 herr">
+                <img class="" src="{% static 'easyway/assets/img/in.png' %}" alt=""><br>
+                <p>Linkedin for Business</p>
+              </div>
+
+              <div class="col-md-3 herr">
+                <img class="" src="{% static 'easyway/assets/img/bots.png' %}" alt=""><br>
+                <p>Bots</p>
+              </div>
+
+              <div class="col-md-3">
+                <img class="" src="{% static 'easyway/assets/img/google.png' %}" alt="">
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="servicio-web">
+          <div id="" class="container lato">
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+
+              <div class="col-md-6">
+                <h3 class="titulos oswald"> Desarrolla con nosotros tu <br /><span>página web</span> </h3>
+                <p id="parrafo-web" class="align-center">Nuestro equipo de diseñadores gráficos, programadores y
+                  comunicadores sociales se encargarán de realizar un diseño
+                  innovador e impactante que acompañe a tu NEGOCIO durante toda su historia</p>
+
+              </div>
+
+              <div class="col-md-3">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 control_cuadritos">
+                <img class="" src="{% static 'easyway/assets/img/cuadro-1.png' %}" alt="">
+                <img class="cuadritos" src="{% static 'easyway/assets/img/cuadro-2.png' %}" alt="">
+                <img class="cuadritos" src="{% static 'easyway/assets/img/cuadro-3.png' %}" alt="">
+
+              </div>
+              <div class="col-md-3 control">
+                <h2>75%</h2>
+                <h4>De descuento en la página web <br />de tu empresa.</h4>
+                <p>¡Precios de Locura!</p>
+
+              </div>
+              <div class="col-md-6 controlcito">
+                <img class="laptop" src="{% static 'easyway/assets/img/laptop.png' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="servicios" style="color:#fff;">
+          <div class="container lato">
+            <div class="row">
+              <div class="col-md-4 servicio fadeInUp" style="background-repeat: no-repeat;background-position-x: center;background-image:url('{% static 'easyway/assets/img/diseño-web2.png' %}')">
+                <p class="titulito">Diseño de plataformas de páginas web</p>
+                <p style="text-align:center;">Diseñamos páginas webs adaptadas a las necesidadesde tu empresao negocio</p>
+              </div>
+
+              <div class="col-md-4 servicio fadeInUp" style="background-repeat: no-repeat;background-position-x: center;background-image:url('{% static 'easyway/assets/img/pocisionamiento-redes2.png' %}')">
+                <p class="titulito">Posicionamiento en Redes Sociales</p>
+                <p style="text-align:center;width: 80%;margin-left: 2rem;">Incrementa el crecimiento de tu negocio en las redes sociales, con las mejores estratégias creadas por nosotros</p>
+              </div>
+
+              <div class="col-md-4 servicio fadeInUp" style="background-repeat: no-repeat;background-position-x: center;background-image:url('{% static 'easyway/assets/img/harold2.png' %}')">
+                <p class="titulito">Google Adwords</p>
+                <p style="text-align:center;width: 80%;margin-left: 2rem;">Útlizamos las mejores herramientas para alcanzar el máximo crecimiento en tu negocio</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="servicios-marketing">
+          <div id="" class="container lato">
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+
+              <div class="col-md-6">
+                <h3 class="titulos oswald"> Desarrollamos tu campaña <br /><span class="span2">de posicionamiento o expansión de internet</span> </h3>
+                <p id="parrafo-web" class="align-center">En la actualidad un 37% de la población mundial hace uso de las redes sociales,
+                convirtiendolas en uno de los principales canales para el crecimiento de tu negocio</p>
+
+              </div>
+
+              <div class="col-md-3">
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <img class="" src="{% static 'easyway/assets/img/cuadro-marketing-1.png' %}" alt="">
+                <img id="expert" class="cuadritos" src="{% static 'easyway/assets/img/cuadro-marketing-2.png' %}" alt="">
+              </div>
+
+              <div class="col-md-4">
+                <img id="ipad" src="{% static 'easyway/assets/img/ipad.png' %}" alt="">
+              </div>
+
+              <div class="col-md-4">
+                <img id="strategy" class="" src="{% static 'easyway/assets/img/cuadro-marketing-3.png' %}" alt="">
+                <img class="cuadritos" src="{% static 'easyway/assets/img/cuadro-marketing-4.png' %}" alt="">
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="skills">
+          <div class="container lato">
+            <div class="row">
+
+              <div class="col-md-3 col-sm-6">
+                <img class="barras-skills" src="{% static 'easyway/assets/img/barras-skills.png' %}" alt="">
+                <h2 class="porcentaje align-center">86%</h2>
+                <p class="align-center" style="color:#fff;">Incremento en el número de prospectos de cliente</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="barras-skills" src="{% static 'easyway/assets/img/barras-skills.png' %}" alt="">
+                <h2 class="porcentaje align-center">94%</h2>
+                <p class="align-center" style="color:#fff;">Creatividad y detalle en el diseño de piezas gráficas</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="barras-skills" src="{% static 'easyway/assets/img/barras-skills.png' %}" alt="">
+                <h2 class="porcentaje align-center">84%</h2>
+                <p class="align-center" style="color:#fff;">Desarrollo de plataformas web funcionalmente efectivas</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="barras-skills" src="{% static 'easyway/assets/img/barras-skills.png' %}" alt="">
+                <h2 class="porcentaje align-center">1.000.000</h2>
+                <p class="align-center" style="color:#fff;">De personas alcanzadas con nuestras campañas</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="landing-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 oswald align-center footercito">
+
+                <h5>&copy; 2017 EASYWAYPLUS. Todos los derechos reservados</h5>
+                <h5>Diseño y Desarrollo por <a href="www.easywayplus.com" target="_blank">Easyway</a></h5>
+
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+
+      </div>
+
+  </body>
+</html>

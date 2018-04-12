@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EasyWay+ | Eduardo Saavedra">
+    <meta name="description" content="EasyWay+ Creamos increibles campañas digitales con soporte constante y desarrollo web para todos nuestros clientes.">
+
+    <!-- STYLES -->
+    <link rel="shortcut icon" href="{% static 'easyway/assets/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'easyway/assets/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'easyway/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'easyway/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'easyway/assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'easyway/assets/css/responsive.css' %}">
+    <title>¡Gracias por dejar tu mensaje!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body style="background-color: beige;" class="lato">
+
+    <div class="container">
+    	<div class="row text-center">
+            <div class="col-sm-6 col-sm-offset-3" style="margin-top:20%;margin-bottom:25%;">
+            <br><br>
+            <h2>¡Muchas Gracias!</h2>
+
+            <p >En breves instantes, un representante de nuestro equipo de ventas se  comunicara con ud para descubrir
+            todo lo que EasyWay puede hacer por su negocio</p>
+            <a href="{% url 'index' %}" class="btn btn-success"> Regresar </a>
+        <br><br>
+            </div>
+
+    	</div>
+    </div>
+
+  </body>
+</html>

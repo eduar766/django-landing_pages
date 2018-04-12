@@ -1,0 +1,40 @@
+/* Diseño Responsive */
+@media only screen and (max-width: 500px) {
+  .cohete, .laptop {
+    display: none;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #expert {
+    margin-bottom: 2rem;
+  }
+  #strategy {
+    margin-top: 2rem;
+  }
+  #formulario {
+    text-align: center;
+  }
+
+  .control_cuadritos img {
+    width: 80%;
+  }
+
+  /* Estilos Responsive */
+  .letra_responsive {
+    font-size: 1.2rem !important;
+    text-align: center !important;
+    margin: 0 auto;
+  }
+
+  form.formulario {
+    margin: 0;
+    padding: 0;
+  }
+  .herr p {
+    text-align: center;
+  }
+}

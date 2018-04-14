@@ -21,4 +21,5 @@ urlpatterns = [
     path('easyway/', include('easyway.urls')),
     path('liliana/', include('liliana.urls')),
     path('bailante/', include('bailante.urls')),
+    path('recicladora/', include('recicladora.urls')),
 ]

@@ -1,0 +1,11 @@
+{% load static %}
+papu
+
+
+
+<form action="{% url 'sendImg' %}" method="POST" enctype="multipart/form-data">>
+  {% csrf_token %}
+  <input type="text">{{ forms.name }}</input><br>
+  <input type="file">{{ forms.model_pic }}</input><br>
+  <input type="submit" value="Enviar">
+</form>

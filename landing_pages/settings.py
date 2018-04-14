@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'easyway',
     'liliana',
     'bailante',
+    'recicladora',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'landing_pages.wsgi.application'
 

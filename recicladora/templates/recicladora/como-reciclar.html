@@ -1,0 +1,430 @@
+{% load static %}
+
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Eduardo Saavedra">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="{% static 'recicladora/assets/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'recicladora/assets/js/script.js' %}"></script>
+
+
+	<link rel="stylesheet" href="{% static 'recicladora/assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'recicladora/assets/css/bootstrap-grid.min.css' %}">
+	<link rel="stylesheet" href="{% static 'recicladora/assets/css/style.css' %}">
+	<title>Centro de Acopio Villa Hermosa</title>
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img src="{% static 'recicladora/assets/img/logo.png' %}" alt="Centro de Acopio Villa Hermosa"></a>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="container">
+				<nav class="navbar navbar navbar-expand-lg navbar-light">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="nav">
+							<li class=""><a href="{% url 'index' %}"> Inicio </a></li>
+							<li><a href="{% url 'servicios' %}"> Servicios </a></li>
+							<li><a href="{% url 'como_reciclar' %}"> Cómo Reciclar </a></li>
+							<li><a href="{% url 'galeria' %}"> Galería </a></li>
+							<li><a href="{% url 'nosotros' %}"> Nosotros </a></li>
+							<li><a href="{% url 'contacto' %}"> Contácto </a></li>
+						</ul>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com/Recicladora-Villa-Hermosa-570114590003297/" target="_blank"><img src="{% static 'recicladora/assets/img/fb-logo.png' %}" alt="Facebook"></a>
+						<a href="https://www.instagram.com/recicladora_villa_hermosa/" target="_blank"><img src="{% static 'recicladora/assets/img/ig-logo.png' %}" alt="Instagram"></a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<section id="reciclar">
+		<div class="container">
+			<div class="row">
+				<h5>Como reciclar según la norma técnica colombiana GTC24</h5>
+				<p>El color de las Canecas de Reciclaje es muy importante, ya que ayuda con la correcta identificación del tipo de residuo
+				que se debe depositar en cada una de ellas. De esta manera se puede dar inicio a un buen programa de separación de
+				residuos en la fuente que facilite las tareas de reciclaje y recuperación.</p>
+			</div>
+
+			<div class="row boton">
+				<a href="{% static 'recicladora/assets/downloads/b096d37fcdee87a1f193271978cc2965.pdf' %}" download="Norma Técnica Colombiana GTC24">
+					<svg width="" height="0">
+						<img id="boton-reciclar" src="{% static 'recicladora/assets/img/boton.svg' %}" alt="">
+					</svg>
+				</a>
+			</div>
+
+			<div class="row">
+				<p>El siguiente es el código de color que identifica las canecas de basura y reciclaje utilizadas en la separación de residuos,
+				en los sectores industrial, comercial, institucional y de servicios.</p>
+
+				<p>La separación de residuos se debe hacer en la medida de lo posible en tantos contenedores como tipos de residuos
+				existan, mas sin embargo cada ente generador es libre de agrupar sus residuos teniendo en cuenta criterios de afinidad,
+				compatibilidad potencial de aprovechamiento y de acuerdo a la legislación vigente.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="parallax-reciclar"></section>
+	<section class="no-parallax">
+		<img class="no-parallax-img" src="{% static 'recicladora/assets/img/par_3.jpg' %}" alt="">
+	</section>
+
+	<section id="reciclar-ordinarios">
+		<div class="container">
+			<div class="row">
+				<img id="ordinarios-img" src="{% static 'recicladora/assets/img/l_ordinarios.svg' %}" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<h5>Son aquellos generados en el desempeño normal de las actividades.</h5>
+			</div>
+
+			<div class="row">
+				<ul>
+					<li>Envolturas de alimentos</li>
+					<li>Papel sucio y engrasado</li>
+					<li>Papel carbón y aluminio</li>
+					<li>Barrido y servilletas</li>
+					<li>Icopor, tetrapack</li>
+					<li>Toallas de lavado de manos</li>
+					<li>Colillas de cigarrillo</li>
+					<li>Pitillos</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/ordi_1-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/ordi_2-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/ordi_3-01.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reciclar-papel">
+		<div class="container">
+			<div class="row">
+				<img id="ordinarios-img" src="{% static 'recicladora/assets/img/l_papel.svg' %}" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<h5>Procurar que el papel y el cartón estén limpios y no arrugados, no se debe depositar allí papel
+				aluminio, papel carbón o térmico (como el fax o impresoras), tampoco papel higiénico, servilletas,
+				pañuelos y desechables</h5>
+
+				<p>Se recomienda que la disposición final se haga vendiendo u ofreciendo los desechos a empresas recicladoras que los
+transformen en materia prima para la elaboración de nuevos productos.</p>
+			</div>
+
+			<div class="row">
+				<ul>
+					<li>Papel</li>
+					<li>Cartón</li>
+					<li>Periódicos</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/pape_1-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/pape_2-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/pape_3-01.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reciclar-plastico">
+		<div class="container">
+			<div class="row">
+				<img id="ordinarios-img" src="{% static 'recicladora/assets/img/l_plastico.svg' %}" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<ul>
+					<li>Envases no retornarles</li>
+					<li>Desechables Plásticos</li>
+					<li>Bolsas Plásticas</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/plast_1-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/plast_2-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/plast_3-01.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reciclar-vidrio">
+		<div class="container">
+			<div class="row">
+				<img id="ordinarios-img" src="{% static 'recicladora/assets/img/l_vidrio.svg' %}" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<h5>Procura no introducir vidrios o envases rotos, de ser así procura que vayan en una bolsa para
+				evitar accidentes</h5>
+			</div>
+
+			<div class="row">
+				<ul>
+					<li>Botellas</li>
+					<li>Envases de bebidas</li>
+					<li>Envases de cerveza u otros alimentos</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/vidri_1-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/vidri_2-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/vidri_3-01.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reciclar-organicos">
+		<div class="container">
+			<div class="row">
+				<img id="ordinarios-img" src="{% static 'recicladora/assets/img/l_organicos.svg' %}" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<h5>Son aquellos residuos que se descomponen</h5>
+			</div>
+
+			<div class="row">
+				<ul>
+					<li>Restos de Comida</li>
+					<li>Papel Higiénicos</li>
+					<li>Chicles</li>
+					<li>Cascaras de alimentos</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/orga_1-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/orga_2-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/orga_3-01.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reciclar-peligrosos">
+		<div class="container">
+			<div class="row">
+				<img id="ordinarios-img" src="{% static 'recicladora/assets/img/l_peligrosos.svg' %}" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<h5>Anatomo-patológicos</h5>
+			</div>
+
+			<div class="row">
+				<ul>
+					<li>Jeringas, instrumentos cortopunzantes o quirúrgicos</li>
+					<li>Amputaciones</li>
+					<li>Muestras de Análisis</li>
+					<li>Residuos de biopsias, partes y fluidos corporales, animales o parte de ellos inoculados con microorganismos patógenos o portadores de enfermedades infectocontagiosas</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/peli_1-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/peli_2-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/peli_3-01.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reciclar-aluminio">
+		<div class="container">
+			<div class="row">
+				<img id="ordinarios-img" src="{% static 'recicladora/assets/img/l_aluminio.svg' %}" alt="">
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="post-aluminio">
+		<div class="container">
+			<div class="row">
+				<h5>El reciclaje de aluminio es un proceso mediante el cual se transforma un material de desecho en
+				otro material de utilidad, es decir, darle un uso a lo que ha sido catalogado como inservible o
+				basura</h5>
+
+				<h5>También es una forma de solucionar el problema de la acumulación de residuos, el ahorro de la
+				energía, la extinción de residuos renovables</h5>
+			</div>
+
+			<div class="row">
+				<ul>
+					<li>Latas de bebidas</li>
+					<li>Latas de cerveza</li>
+					<li>Envases de alimentos</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/alu_1-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/alu_2-01.png' %}" alt="">
+				</div>
+
+				<div class="col-md-4">
+					<img class="reciclados" src="{% static 'recicladora/assets/img/alu_3-01.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container footer-grande">
+			<div class="row">
+				<div class="col-md-5">
+				<div class="row">
+					<a href="#"><img id="logo-footer" src="{% static 'recicladora/assets/img/logo_2.png' %}" alt="Centro de Acopio Villa Hermosa"></a></div>
+					<div class="row">
+						<div id="desarrolladoPor"><span><p>Desarrollado por:</p></span>
+							<span><a href="#"><img src="{% static 'recicladora/assets/img/logo_pmd.svg' %}" alt="Centro de Acopio Villa Hermosa"></a></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2"></div>
+				<div class="col-md-5">
+					<ul class="contacto-footer">
+						<a href="tel:+573209042934"><li class="icon-what"> <span> + 57 320 904 2934 </span></li></a>
+						<a href="https://www.facebook.com/Recicladora-Villa-Hermosa-570114590003297/" target="_blank"><li class="icon-face"> <span> RecicladoraVillaHermosa </span></li></a>
+						<a href="https://www.instagram.com/recicladora_villa_hermosa/" target="_blank"><li class="icon-insta"> <span> Recicladora_Villa_Hermosa </span></li></a>
+						<a href="https://twitter.com/recicladora2" target="_blank"><li class="icon-twi"> <span> @recicladora2 </span></li></a>
+						<a href="https://www.youtube.com/channel/UCvoWJWe_-9oYz__GDFuj8uQ" target="_blank"><li class="icon-you"> <span> Centro de Acopio Villa Hermosa </span></li></a>
+					</ul>
+			</div>
+
+
+			</div>
+
+		</div>
+
+		<div class="container footer-peque">
+			<div class="row">
+				<div class="col-md-5">
+					<ul class="contacto-footer">
+						<a href="tel:+573209042934"><li class="icon-what"> <span> + 57 320 904 2934 </span></li></a>
+						<a href="https://www.facebook.com/Recicladora-Villa-Hermosa-570114590003297/" target="_blank"><li class="icon-face"> <span> RecicladoraVillaHermosa </span></li></a>
+						<a href="https://www.instagram.com/recicladora_villa_hermosa/" target="_blank"><li class="icon-insta"> <span> Recicladora_Villa_Hermosa </span></li></a>
+						<a href="https://twitter.com/recicladora2" target="_blank"><li class="icon-twi"> <span> @recicladora2 </span></li></a>
+						<a href="https://www.youtube.com/channel/UCvoWJWe_-9oYz__GDFuj8uQ" target="_blank"><li class="icon-you"> <span> Centro de Acopio Villa Hermosa </span></li></a>
+					</ul>
+
+				</div>
+
+				<div class="col-md-2"></div>
+				<div class="col-md-5">
+
+					<div class="row">
+						<a href="#"><img id="logo-footer" src="assets/img/logo_2.png" alt="Centro de Acopio Villa Hermosa"></a></div>
+						<div class="row">
+							<div id="desarrolladoPor"><span><p>Desarrollado por:</p></span>
+								<span><a href="#"><img src="assets/img/logo_pmd.svg" alt="Centro de Acopio Villa Hermosa"></a></span>
+							</div>
+						</div>
+			</div>
+
+
+			</div>
+
+		</div>
+
+	</footer>
+
+</body>
+</html>
